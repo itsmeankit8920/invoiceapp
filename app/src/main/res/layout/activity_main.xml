@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+   <!-- Logo Image at the top -->
+   <ImageView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:src="@drawable/karnataka"
+       android:contentDescription="Logo"
+       android:layout_gravity="center" />
+
+   <!-- Customer Name Input -->
+   <EditText
+       android:id="@+id/et_customer_name"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Customer Name"
+       android:inputType="textPersonName"
+       android:layout_marginTop="16dp" />
+
+   <!-- Service Description Input -->
+   <EditText
+       android:id="@+id/et_serice_description"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Service Description"
+       android:inputType="textMultiLine"
+       android:layout_marginTop="8dp" />
+
+   <!-- Amount Input -->
+   <EditText
+       android:id="@+id/et_amount"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Amount (INR)"
+       android:inputType="numberDecimal"
+       android:layout_marginTop="8dp" />
+
+   <!-- Mode of Payment Input -->
+   <EditText
+       android:id="@+id/et_mode_of_payment"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Mode of Payment"
+       android:inputType="text"
+       android:layout_marginTop="8dp" />
+
+   <!-- Address Input -->
+   <EditText
+       android:id="@+id/et_address"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Address"
+       android:inputType="text"
+       android:layout_marginTop="8dp" />
+
+   <!-- Generate Invoice Button -->
+   <Button
+       android:id="@+id/btn_generate_invoice"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Generate Invoice"
+       android:layout_marginTop="16dp" />
+
+   <!-- QR Code ImageView -->
+   <ImageView
+       android:id="@+id/qr_code"
+       android:layout_width="400dp"
+       android:layout_height="400dp"
+       android:layout_marginTop="16dp"
+       android:visibility="gone" />
+
+</LinearLayout>
